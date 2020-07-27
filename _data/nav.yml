@@ -1,0 +1,12 @@
+- name: Home
+  url: /
+- name: Food
+  url: /
+- name: Travel
+  url: /
+- name: Plants
+  url: /
+- name: Books
+  url: /
+- name: About me
+  url: /

@@ -1,0 +1,39 @@
+--- 
+--- 
+
+{% include header.html %}
+
+<body>
+
+    <div class="main-container">
+
+        <div class="upper-page-container">
+
+            {% include hamburger.html %} 
+            
+            {% include banner.html %}
+            
+            {% include nav.html %}
+
+            <div class="first-post">
+                <div class="first-post-text">
+                    <h2 class="first-post-title">{{ page.title }}</h2>
+                    <img src="{{ page.img_src }}" alt="{{ page.img_alt}}" class="first-post-img">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="post-content">
+            {{ content }}
+        </div>
+
+        {% include footer.html %}
+
+    </div>
+
+    <script src="/assets/js/custom_expand.js"></script>
+
+</body>
+
+</html>
