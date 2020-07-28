@@ -20,7 +20,7 @@
                 <div class="first-post-text">
                     <div class="title-date">
                         <h2 class="first-post-title">{{ site.posts[0].title }}</h2>
-                        <p class="date">{{ site.posts[0].date | date_to_string }}, Genova</p>
+                        <p class="date">{{ site.posts[0].place }}, {{ site.posts[0].date | date_to_string }}</p>
                     </div>
                     <img src="{{ site.posts[0].img_src }}" alt="{{ site.posts[0].img_alt }}" class="first-post-img-sm">
                     <p class="first-post-short">
@@ -59,7 +59,12 @@
                 {{post.url}}
                 {% endcapture %}
         
-                {% include card.html img_src=post_img_src img_alt=post_img_alt url=post_url title=post_title excerpt=post_excerpt %}
+                {% include card.html 
+                    img_src=post_img_src 
+                    img_alt=post_img_alt 
+                    url=post_url 
+                    title=post_title 
+                    excerpt=post_excerpt %}
         
             {% endfor %}
         
