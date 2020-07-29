@@ -1,12 +1,12 @@
 - name: Home
-  url: /
+  url: /index.html
 - name: Food
   url: /
 - name: Travel
-  url: /
+  url: /travel.html
 - name: Plants
   url: /
 - name: Books
-  url: /
+  url: /books.html
 - name: About me
   url: /

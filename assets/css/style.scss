@@ -10,6 +10,11 @@
     /* border: 1px solid black; */
 }
 
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
 h3 {
     margin-bottom: 0.4rem;
 }
@@ -168,7 +173,7 @@ p.date {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .card-img {
@@ -178,8 +183,8 @@ p.date {
 }
 
 .card-readmore {
-    padding: 0.5rem;
-    width: 100px;
+    padding: 1rem;
+    width: 200px;
     align-self: flex-end;
 }
 

@@ -17,19 +17,29 @@
 
             <div class="first-post">
 
+                {% if page.category %}
+                    {% for cat in site.categories %}
+                        {% if cat[0] == page.category %}
+                            {% assign first_post = cat[1][0] %}
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    {% assign first_post = site.posts[0] %}
+                {% endif %}
+
                 <div class="first-post-text">
                     <div class="title-date">
-                        <h2 class="first-post-title">{{ site.posts[0].title }}</h2>
-                        <p class="date">{{ site.posts[0].place }}, {{ site.posts[0].date | date_to_string }}</p>
+                        <h2 class="first-post-title">{{ first_post.title }}</h2>
+                        <p class="date">{{ first_post.place }}, {{ first_post.date | date_to_string }}</p>
                     </div>
-                    <img src="{{ site.posts[0].img_src }}" alt="{{ site.posts[0].img_alt }}" class="first-post-img-sm">
+                    <img src="/assets/images/mid/{{ first_post.img_src }}" alt="{{ first_post.img_alt }}" class="first-post-img-sm">
                     <p class="first-post-short">
-                        {{ site.posts[0].excerpt | strip_html }}
+                        {{ first_post.excerpt | strip_html }}
                     </p>
-                    <a href="{{ site.posts[0].url }}" class="card-readmore">Leggi..</a>
+                    <a href="{{ first_post.url }}" class="card-readmore">Continua a leggere...</a>
                 </div>
 
-                <img src="{{ site.posts[0].img_src }}" alt="{{ site.posts[0].img_alt }}" class="first-post-img-lg">
+                <img src="/assets/images/mid/{{ first_post.img_src }}" alt="{{ first_post.img_alt }}" class="first-post-img-lg">
 
             </div>
 
@@ -37,10 +47,25 @@
 
         <div class="posts-container">
 
-            {% for post in site.posts %}
-        
+            {% if page.category %}
+                    {% for cat in site.categories %}
+                        {% if cat[0] == page.category %}
+                            {% assign posts = cat[1] %}
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    {% assign posts = site.posts %}
+            {% endif %}
+
+
+            {% for post in posts %}
+
+                {% if forloop.index == 1 %}  
+                    {% continue %}
+                {% endif %}
+
                 {% capture post_img_src %}
-                {{post.img_src}}
+                /assets/images/sm/{{post.img_src}}
                 {% endcapture %}
         
                 {% capture post_img_alt %}
