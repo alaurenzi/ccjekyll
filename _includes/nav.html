@@ -1,7 +1,12 @@
 <nav class="navbar">
     <ul class="navbar-content hidden" data-collapsed="true">
         {% for item in site.data.nav %}
-        <li class="navbar-item"><a href="{{ item.url | link }}">{{ item.name }}</a></li>
+            {% if item.name == page.category %}
+                {% assign cl = "navbar-item navbar-item-current" %}
+            {% else %}
+                {% assign cl = "navbar-item" %}
+            {% endif %}
+        <li class="{{ cl }}"><a href="{{ item.url | link }}">{{ item.name | capitalize }}</a></li>
         {% endfor %}
     </ul>
 </nav>

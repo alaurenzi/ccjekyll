@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  I fratelli Ashkenazi
+author: Israel J. Singer
 date:   2019-10-21
 place: Genova
 categories: books

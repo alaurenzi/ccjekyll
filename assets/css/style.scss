@@ -26,11 +26,12 @@ h2 {
 .banner {
     display: flex;
     justify-content: center;
+    overflow-wrap: break-word;
     align-content: center;
     vertical-align: middle;
-    line-height: 50px;
+    // line-height: 50px;
     color: $primary-color;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     padding: 1rem 0rem;
 }
 
@@ -88,7 +89,7 @@ body {
     color: $text-color;
     font-family: 'Lekton', sans-serif;
     letter-spacing: 0.2rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     flex-grow: 1;
     transition: all 0.3s;
     text-align: center;
@@ -98,6 +99,12 @@ body {
     color: $primary-color;
     background-color: $primary-color-extralight;
     font-weight: 700;
+}
+
+.navbar-item-current {
+    // color: $primary-color;
+    font-weight: 700;
+    // text-decoration: underline;
 }
 
 .fas,
@@ -120,21 +127,21 @@ body {
     justify-content: space-between;
     padding: 1rem 3rem;
     border-left: 10px solid $primary-color;
+    background-color: $first-post-background;
 }
 
-p.date {
-    float: right;
-    margin-top: 1rem 0rem;
-    font-style: italic;
+.first-post-title {
+    margin: 0 0 0rem 0;
 }
 
 .first-post-short {
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 1.3rem;
 }
 
 .first-post-img-lg {
-    width: 45%;
+    width: 60%;
     object-fit: cover;
 }
 
@@ -152,7 +159,7 @@ p.date {
 }
 
 .card {
-    height: 500px;
+    height: 550px;
     width: 30%;
     background-color: $card-background;
     margin: 1rem 0rem;
@@ -183,9 +190,21 @@ p.date {
 }
 
 .card-readmore {
-    padding: 1rem;
-    width: 200px;
+    padding: 0.5rem;
+    margin: 1rem;
+    text-align: center;
     align-self: flex-end;
+    color: $primary-color;
+    border: 1px solid $primary-color-light;
+    transition: background-color 0.3s;
+}
+
+.card .card-readmore {
+    font-size: 0.9rem;
+}
+
+.card-readmore:hover {
+    background-color: $primary-color-extralight;
 }
 
 .card-short {
@@ -275,6 +294,7 @@ footer p {
     .first-post-img-sm {
         display: block;
         margin: 1rem 0rem;
+        height: 85vh;
     }
     .first-post-text {
         padding: 1rem;
@@ -291,6 +311,7 @@ footer p {
     }
     .card {
         width: 100%;
+        height: unset;
     }
 }
 

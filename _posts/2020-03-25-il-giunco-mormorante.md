@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Il giunco mormorante
+author: Nina Berberova
 date:   2020-03-25
 place: Genova
 categories: books

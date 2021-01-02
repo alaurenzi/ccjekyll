@@ -3,30 +3,62 @@
 
 @import 'vars';
 
+.post-header {
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    margin: 1rem 3rem 1rem 0rem;
+    padding: 0rem;
+    
+    background-color: $first-post-background;
+}
+
+.post-header-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem 3rem 1rem 3rem;
+    border-left: 10px solid $primary-color;
+}
+
+p.date {
+    align-self: flex-end;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
 .post-content {
     line-height: 1.5;
     border-left: 10px solid $primary-color-light;
-    padding: 3rem;
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
 }
 
-.first-post-title {
-    margin: 0 0 2rem 0;
-}
-
-.first-post-img {
+.post-header-img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    width: 40%;
+    min-height: 100%;
 }
 
 .post-content p {
     text-align: justify;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 @media (max-width: 768px) {
     .post-content {
         border-left: 5px solid $primary-color-light;
         padding: 1rem;
+    }
+    .post-header {
+        flex-direction: column;
+        margin: 1rem 1rem 1rem 0rem;
+    }
+    .post-header-img {
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%;
+        padding: 1rem 0rem;
     }
 }

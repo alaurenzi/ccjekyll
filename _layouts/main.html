@@ -30,7 +30,8 @@
                 <div class="first-post-text">
                     <div class="title-date">
                         <h2 class="first-post-title">{{ first_post.title }}</h2>
-                        <p class="date">{{ first_post.place }}, {{ first_post.date | date_to_string }}</p>
+                        <h3 class="first-post-author">di {{ first_post.author }}</h3>
+                        <!-- <p class="date">{{ first_post.place }}, {{ first_post.date | date_to_string }}</p> -->
                     </div>
                     <img src="/assets/images/mid/{{ first_post.img_src }}" alt="{{ first_post.img_alt }}" class="first-post-img-sm">
                     <p class="first-post-short">

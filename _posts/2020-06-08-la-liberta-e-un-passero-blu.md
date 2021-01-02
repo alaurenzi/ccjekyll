@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  La libertà è un passero blu
+author: Heloneida Studart
 date:   2020-06-08
 place: Genova
 categories: books

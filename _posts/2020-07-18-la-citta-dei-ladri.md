@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  La città dei ladri
+author: David Benioff
 date:   2020-07-18
 place: Genova
 categories: books
