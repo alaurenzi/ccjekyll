@@ -5,8 +5,8 @@ author: Woody Allen
 date: 2020-08-07
 place: Genova
 categories: books
-img_src: la-citta-dei-ladri.jpg
-img_alt: La città dei ladri di D. Benioff
+img_src: a-proposito-di-niente.jpg
+img_alt: A proposito di niente di Woody Allen
 ---
 Di solito aspetto prima di scrivere queste pagine brevi di impressioni, ma - a fronte di un libro che sembra la versione scritta di un audio tape - mi butto! 
 

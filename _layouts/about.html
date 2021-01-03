@@ -1,0 +1,32 @@
+--- 
+--- 
+
+{% include header.html %}
+
+<body>
+
+    <div class="main-container">
+
+        {% include hamburger.html %} 
+        
+        {% include banner.html %}
+        
+        {% include nav.html %}
+
+        <div class="about-container">
+
+            <img src="assets/images/sm/cate.jpg" alt="Foto della Cate" class="img-cate">
+
+            {{ page.content | markdownify }}
+
+        </div>
+
+        {% include footer.html %}
+
+    </div>
+
+</body>
+
+<script src="/assets/js/custom_expand.js"></script>
+
+</html>

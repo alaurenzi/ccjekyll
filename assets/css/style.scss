@@ -130,6 +130,13 @@ body {
     background-color: $first-post-background;
 }
 
+p.date {
+    align-self: flex-end;
+    float: right;
+    font-style: italic;
+    font-size: 1rem;
+}
+
 .first-post-title {
     margin: 0 0 0rem 0;
 }
@@ -168,11 +175,21 @@ body {
     justify-content: left;
 }
 
+.card-header {
+    margin-bottom: 1rem;
+    padding-bottom: 2px;
+    border-bottom: 3px solid $primary-color;
+}
+
 .card-title {
     font-size: 1.5rem;
-    padding-bottom: 3px;
-    margin-bottom: 1rem;
-    border-bottom: 3px solid $primary-color;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.card-author {
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .card-text {
@@ -237,10 +254,7 @@ footer p {
     .banner {
         justify-content: center;
     }
-    .fas,
-    .far {
-        margin: 0 1rem;
-    }
+    
     div.hamburger {
         margin: 1rem 0rem;
         height: 32px;
@@ -251,6 +265,7 @@ footer p {
         align-content: center;
         transition: background-color 0.5s ease;
     }
+
     @media (hover: hover) {
         div.hamburger:hover {
             background-color: $primary-color;
@@ -261,7 +276,7 @@ footer p {
     }
     div.hamburger:active {
         transition: none;
-        background-color: darkred;
+        background-color:$primary-color-dark
     }
     span.ham-line {
         width: 30px;

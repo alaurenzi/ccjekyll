@@ -5,8 +5,8 @@ author: Pajtim Statovci
 date: 2020-09-26
 place: Genova
 categories: books
-img_src: la-citta-dei-ladri.jpg
-img_alt: La città dei ladri di D. Benioff
+img_src: le-transizioni.jpg
+img_alt: Le transizioni di Pajtim Statovci
 ---
 Se chi saremo stati viene soffocato, da quel momento in poi, allora, chi siamo?
 Questo libro sembra rispondere: tutti, e nessuno.

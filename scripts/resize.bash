@@ -19,5 +19,5 @@ for i in *.jpg; do
     [ -f "$i" ] || break
     convert $i -resize 1200x800 sm/$i
     chmod 666 mid/$i
-    jpegoptim --size 100k sm/$i
+    jpegoptim --size 150k sm/$i
 done

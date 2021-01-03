@@ -5,8 +5,8 @@ author: Vladimir Sorokin
 date:   2020-12-04
 place: Genova
 categories: books
-img_src: la-citta-dei-ladri.jpg
-img_alt: La città dei ladri di D. Benioff
+img_src: la-tormenta.jpg
+img_alt: La tormenta di Vladimir Sorokin
 ---
 Esco in questo istante dalla tormenta. Avverto ancora il freddo e ho negli occhi ancora il bianco della neve che si stacca da terra e turbina davanti alla propulsositta. 
 
