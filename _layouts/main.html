@@ -51,7 +51,7 @@
                     <p class="first-post-short">
                         {{ first_post.excerpt | strip_html }}
                     </p>
-                    <a href="{{ first_post.url }}" class="card-readmore">Continua a leggere...</a>
+                    <a href="{{site.baseurl}}{{ first_post.url }}" class="card-readmore">Continua a leggere...</a>
                 </div>
 
                 <img src="{{ img_abs_src }}" alt="{{ first_post.img_alt }}" class="first-post-img-lg">
@@ -129,7 +129,7 @@
 
     </div>
 
-    <script src="/assets/js/custom_expand.js"></script>
+    <script src="{{site.baseurl}}/assets/js/custom_expand.js"></script>
 
 </body>
 
