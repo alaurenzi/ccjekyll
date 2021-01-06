@@ -36,7 +36,7 @@ body { font-size: 1rem; font-family: "Montserrat", sans-serif; color: #505050; }
 
 p.date { align-self: flex-end; float: right; font-style: italic; font-size: 1rem; }
 
-.first-post-title { margin: 0 0 0rem 0; }
+.first-post-title { margin: 0 0 5px 0; line-height: 1; }
 
 .first-post-short { text-align: justify; line-height: 1.5; font-size: 1.3rem; }
 
