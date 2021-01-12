@@ -14,10 +14,12 @@
         {% include nav.html %}
 
         <div class="about-container">
+            
+            <div class="about-text">
+                {{ page.content | markdownify }}
+            </div>
 
-            <img src="assets/images/sm/cate.jpg" alt="Foto della Cate" class="img-cate">
-
-            {{ page.content | markdownify }}
+            <img src="{{site.baseurl}}/assets/images/sm/cate.jpg" alt="Foto della Cate" class="about-img">
 
         </div>
 
