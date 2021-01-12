@@ -1,12 +1,12 @@
 - name: home
   url: /index.html
-- name: books
+- name: letture
   url: /books.html
-- name: food
+- name: cucina
   url: /food.html
-- name: travel
+- name: giretti
   url: /travel.html
-- name: diary
+- name: appunti
   url: /diary.html
-- name: about me
+- name: lacate
   url: /about.html
