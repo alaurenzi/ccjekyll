@@ -1,0 +1,4 @@
+{% capture src %}
+{% include url_prepend.html arg_url=include.img_src arg_prefix=site.data.img.prefix %}
+{% endcapture %}
+<img src="{{ src | strip_newlines | strip }}" class="{{include.img_class}}">

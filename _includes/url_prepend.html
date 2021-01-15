@@ -1,9 +1,6 @@
-
-
 {% assign tokens = include.arg_url | split: "http" %}
-
 {% if tokens.size > 1 %}
     {{include.arg_url}}
 {% else %}
-    {{site.baseurl}}{{include.arg_url | strip | prepend: include.arg_prefix}}
+    {{site.baseurl}}{{include.arg_url | strip | prepend: include.arg_prefix }}
 {% endif %}
