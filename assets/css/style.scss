@@ -32,13 +32,18 @@ h2 {
     // line-height: 50px;
     color: $primary-color;
     font-size: 4.5rem;
-    padding: 1rem 0rem;
+    padding: 0.5rem 0rem;
 }
 
-.banner-title {
+#banner-title-lg {
     display: flex;
     align-content: center;
-    text-align: center;
+    height: 120px;
+    padding-top: 5px;
+}
+
+#banner-title-sm {
+    display: none;
 }
 
 body {
@@ -86,7 +91,7 @@ body {
 .navbar-item {
     padding: 1rem;
     margin: 0.16rem 0rem;
-    color: $text-color;
+    color: $primary-color;
     font-family: 'Lekton', sans-serif;
     letter-spacing: 0.2rem;
     font-size: 1.8rem;
@@ -105,12 +110,6 @@ body {
     // color: $primary-color;
     font-weight: 700;
     // text-decoration: underline;
-}
-
-.fas,
-.far {
-    margin: 0 2rem;
-    height: 32px;
 }
 
 .first-post {
@@ -145,7 +144,6 @@ p.date {
 .first-post-short {
     text-align: justify;
     line-height: 1.5;
-    font-size: 1.3rem;
 }
 
 .first-post-img-lg {
@@ -252,8 +250,21 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
     .banner {
         justify-content: center;
+    }
+
+    #banner-title-sm {
+        display: flex;
+        align-content: flex-start;
+        height: 240px;
+        width: auto;
+        padding-top: 5px;
+    }
+    
+    #banner-title-lg {
+        display: none;
     }
     
     div.hamburger {
@@ -281,7 +292,7 @@ footer p {
     }
     span.ham-line {
         width: 30px;
-        border-top: 1px solid $primary-color;
+        border-top: 2px solid $primary-color;
         transition: border-color 0.5s ease;
         margin-top: 4px;
         margin-bottom: 4px;
@@ -332,6 +343,9 @@ footer p {
 }
 
 @media (max-width: 450px) {
+    #banner-title-sm {
+        height: 160px;
+    }
     .banner-title {
         font-size: 2.5rem;
     }
