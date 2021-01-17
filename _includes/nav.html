@@ -6,7 +6,7 @@
             {% else %}
                 {% assign cl = "navbar-item" %}
             {% endif %}
-        <li class="{{ cl }}"><a href="{{site.baseurl}}{{ item.url | link }}">{{ item.name | capitalize }}</a></li>
+        <li class="{{ cl }}"><a href="{{site.baseurl}}{{ item.url | link }}">{{ item.name | upcase }}</a></li>
         {% endfor %}
     </ul>
 </nav>

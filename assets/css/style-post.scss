@@ -10,7 +10,7 @@
     overflow: hidden;
     margin: 1rem 3rem 1rem 0rem;
     padding: 0rem;
-    
+    border-left: 10px solid $primary-color;
     background-color: $first-post-background;
 }
 
@@ -19,7 +19,6 @@
     flex-direction: column;
     flex-grow: 1;
     padding: 1rem 3rem 1rem 3rem;
-    border-left: 10px solid $primary-color;
 }
 
 
@@ -68,8 +67,11 @@ h3 {
 }
 
 @media (max-width: 768px) {
+    .post-header {
+        border-left-width: 5px;
+    }
     .post-content {
-        border-left: 5px solid $primary-color-light;
+        border-left-width: 5px;
         padding: 1rem;
     }
     .post-header {
@@ -80,7 +82,7 @@ h3 {
         object-fit: cover;
         min-width: 100%;
         min-height: 100%;
-        padding: 1rem 0rem;
+        padding: 1rem 1rem;
     }
     .post-img-right {
         width: 100%;

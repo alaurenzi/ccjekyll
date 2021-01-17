@@ -39,7 +39,7 @@ h2 {
     display: flex;
     align-content: center;
     height: 120px;
-    padding-top: 5px;
+    margin: 5px auto;
 }
 
 #banner-title-sm {
@@ -71,6 +71,7 @@ body {
 .navbar {
     display: flex;
     justify-content: right;
+    border-top: 3px solid $primary-color-extralight;
 }
 
 .navbar ul {
@@ -93,8 +94,8 @@ body {
     margin: 0.16rem 0rem;
     color: $primary-color;
     font-family: 'Lekton', sans-serif;
-    letter-spacing: 0.2rem;
-    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.25rem;
     flex-grow: 1;
     transition: all 0.3s;
     text-align: center;
@@ -117,7 +118,7 @@ body {
     display: flex;
     align-items: stretch;
     overflow: hidden;
-    margin: 1rem 0rem;
+    margin-bottom: 1rem;
 }
 
 .first-post-text {
@@ -144,6 +145,7 @@ p.date {
 .first-post-short {
     text-align: justify;
     line-height: 1.5;
+    font-size: 1.25rem;
 }
 
 .first-post-img-lg {
@@ -256,21 +258,41 @@ footer p {
     }
 
     #banner-title-sm {
-        display: flex;
-        align-content: flex-start;
-        height: 240px;
-        width: auto;
+        display: inline;
+        width: 75vw;
+        max-width: 400px;
         padding-top: 5px;
+    }
+
+    .banner-sm {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        margin-bottom: 1rem;
+        background-color: $primary-color;
+    }
+
+    .navbar
+    {
+        border: none;
     }
     
     #banner-title-lg {
         display: none;
     }
+
+    div.ham-container {
+        display: flex;
+        align-items: flex-end;
+
+    }
     
     div.hamburger {
         margin: 1rem 0rem;
-        height: 32px;
-        float: right;
+        padding: 3px;
+        height: 38px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -279,20 +301,25 @@ footer p {
     }
 
     @media (hover: hover) {
+
         div.hamburger:hover {
-            background-color: $primary-color;
+            background-color: $primary-color-dark;
+            border: 1px solid white;
+            border-radius: 4px;
         }
+
         div.hamburger:hover span.ham-line {
-            border-color: lightgoldenrodyellow;
+        }
+
+        div.hamburger:active span.ham-line {
+            transition: none;
+            border-color: gray;
         }
     }
-    div.hamburger:active {
-        transition: none;
-        background-color:$primary-color-dark
-    }
+
     span.ham-line {
         width: 30px;
-        border-top: 2px solid $primary-color;
+        border-top: 2px solid white;
         transition: border-color 0.5s ease;
         margin-top: 4px;
         margin-bottom: 4px;
@@ -343,17 +370,35 @@ footer p {
 }
 
 @media (max-width: 450px) {
-    #banner-title-sm {
-        height: 160px;
-    }
+
     .banner-title {
         font-size: 2.5rem;
     }
+
     .banner-title-text {
         width: 150px;
         line-height: 1;
     }
+
+    span.ham-line {
+        width: 25px;
+        border-top: 2px solid $primary-color;
+        transition: border-color 0.5s ease;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .banner-sm
+    {
+        padding: 0.5rem 1rem;
+    }
+    
     h2 {
         font-size: 2rem;
+    }
+    .first-post-text {
+        border-left: 3px solid $primary-color;
     }
 }
