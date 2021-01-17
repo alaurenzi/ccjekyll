@@ -8,7 +8,7 @@ h2 { font-size: 3rem; }
 
 .banner { display: flex; justify-content: center; overflow-wrap: break-word; align-content: center; vertical-align: middle; color: #007c91; font-size: 4.5rem; padding: 0.5rem 0rem; }
 
-#banner-title-lg { display: flex; align-content: center; height: 120px; padding-top: 5px; }
+#banner-title-lg { display: flex; align-content: center; height: 120px; margin: 5px auto; }
 
 #banner-title-sm { display: none; }
 
@@ -18,19 +18,19 @@ body { font-size: 1rem; font-family: "Montserrat", sans-serif; color: #505050; }
 
 .upper-page-container { display: flex; height: 100vh; min-height: 700px; max-height: 900px; flex-direction: column; align-items: stretch; }
 
-.navbar { display: flex; justify-content: right; }
+.navbar { display: flex; justify-content: right; border-top: 3px solid rgba(0, 124, 145, 0.1); }
 
 .navbar ul { display: flex; list-style-type: none; flex-grow: 1; justify-content: space-between; }
 
 .navbar-content { display: flex; width: 100%; justify-content: left; overflow: hidden; transition: all 1s ease; }
 
-.navbar-item { padding: 1rem; margin: 0.16rem 0rem; color: #007c91; font-family: 'Lekton', sans-serif; letter-spacing: 0.2rem; font-size: 1.8rem; flex-grow: 1; transition: all 0.3s; text-align: center; }
+.navbar-item { padding: 1rem; margin: 0.16rem 0rem; color: #007c91; font-family: 'Lekton', sans-serif; letter-spacing: 0.1rem; font-size: 1.25rem; flex-grow: 1; transition: all 0.3s; text-align: center; }
 
 .navbar-item:hover { color: #007c91; background-color: rgba(0, 124, 145, 0.1); font-weight: 700; }
 
 .navbar-item-current { font-weight: 700; }
 
-.first-post { flex-grow: 1; display: flex; align-items: stretch; overflow: hidden; margin: 1rem 0rem; }
+.first-post { flex-grow: 1; display: flex; align-items: stretch; overflow: hidden; margin-bottom: 1rem; }
 
 .first-post-text { display: flex; flex-direction: column; justify-content: space-between; padding: 1rem 3rem; border-left: 10px solid #007c91; background-color: #f4f4f4; }
 
@@ -38,7 +38,7 @@ p.date { align-self: flex-end; float: right; font-style: italic; font-size: 1rem
 
 .first-post-title { margin: 0 0 5px 0; line-height: 1; }
 
-.first-post-short { text-align: justify; line-height: 1.5; }
+.first-post-short { text-align: justify; line-height: 1.5; font-size: 1.25rem; }
 
 .first-post-img-lg { width: 60%; object-fit: cover; }
 
@@ -72,12 +72,12 @@ footer p { vertical-align: middle; line-height: 100px; }
 
 @media (max-width: 1024px) { .card { width: 45%; } }
 
-@media (max-width: 768px) { .banner { justify-content: center; } #banner-title-sm { display: flex; align-content: flex-start; height: 240px; width: auto; padding-top: 5px; } #banner-title-lg { display: none; } div.hamburger { margin: 1rem 0rem; height: 32px; float: right; display: flex; flex-direction: column; justify-content: center; align-content: center; transition: background-color 0.5s ease; } }
+@media (max-width: 768px) { .banner { justify-content: center; } #banner-title-sm { display: inline; width: 75vw; max-width: 400px; padding-top: 5px; } .banner-sm { display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 0.5rem 2rem; margin-bottom: 1rem; background-color: #007c91; } .navbar { border: none; } #banner-title-lg { display: none; } div.ham-container { display: flex; align-items: flex-end; } div.hamburger { margin: 1rem 0rem; padding: 3px; height: 38px; display: flex; flex-direction: column; justify-content: center; align-content: center; transition: background-color 0.5s ease; } }
 
-@media (max-width: 768px) and (hover: hover) { div.hamburger:hover { background-color: #007c91; } div.hamburger:hover span.ham-line { border-color: lightgoldenrodyellow; } }
+@media (max-width: 768px) and (hover: hover) { div.hamburger:hover { background-color: #007c91; border: 1px solid white; border-radius: 4px; } div.hamburger:active span.ham-line { transition: none; border-color: gray; } }
 
-@media (max-width: 768px) { div.hamburger:active { transition: none; background-color: #007c91; } span.ham-line { width: 30px; border-top: 2px solid #007c91; transition: border-color 0.5s ease; margin-top: 4px; margin-bottom: 4px; margin-right: 6px; margin-left: 6px; } .hidden { padding-top: 0rem; padding-bottom: 0rem; margin-top: 0rem; margin-bottom: 0rem; height: 0; } .navbar-content { flex-direction: column; } .first-post { flex-direction: column; } .first-post-text { border-left: 5px solid #007c91; } .first-post-img-lg { display: none; } .first-post-img-sm { display: block; margin: 1rem 0rem; height: 85vh; } .first-post-text { padding: 1rem; } .upper-page-container { height: inherit; min-height: inherit; max-height: inherit; } .posts-container { flex-direction: column; flex-wrap: unset; align-items: center; } .card { width: 100%; height: unset; } }
+@media (max-width: 768px) { span.ham-line { width: 30px; border-top: 2px solid white; transition: border-color 0.5s ease; margin-top: 4px; margin-bottom: 4px; margin-right: 6px; margin-left: 6px; } .hidden { padding-top: 0rem; padding-bottom: 0rem; margin-top: 0rem; margin-bottom: 0rem; height: 0; } .navbar-content { flex-direction: column; } .first-post { flex-direction: column; } .first-post-text { border-left: 5px solid #007c91; } .first-post-img-lg { display: none; } .first-post-img-sm { display: block; margin: 1rem 0rem; height: 85vh; } .first-post-text { padding: 1rem; } .upper-page-container { height: inherit; min-height: inherit; max-height: inherit; } .posts-container { flex-direction: column; flex-wrap: unset; align-items: center; } .card { width: 100%; height: unset; } }
 
-@media (max-width: 450px) { #banner-title-sm { height: 160px; } .banner-title { font-size: 2.5rem; } .banner-title-text { width: 150px; line-height: 1; } h2 { font-size: 2rem; } }
+@media (max-width: 450px) { .banner-title { font-size: 2.5rem; } .banner-title-text { width: 150px; line-height: 1; } span.ham-line { width: 25px; border-top: 2px solid #007c91; transition: border-color 0.5s ease; margin-top: 3px; margin-bottom: 3px; margin-right: 4px; margin-left: 4px; } .banner-sm { padding: 0.5rem 1rem; } h2 { font-size: 2rem; } .first-post-text { border-left: 3px solid #007c91; } }
 
 /*# sourceMappingURL=style.css.map */
