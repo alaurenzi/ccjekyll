@@ -31,7 +31,7 @@
                 <h3 class="first-post-author">{{ subtitle }}</h3>
                 <p class="date date-post">{{ page.place }}, {{ page.date | date_to_string }}</p>
             </div>
-            <img src="{{ img_abs_src }}" alt="{{ page.img_alt }}" class="post-header-img">
+            <img src="{{img_abs_src|strip}}" alt="{{ page.img_alt }}" class="post-header-img">
         </div>
     
 

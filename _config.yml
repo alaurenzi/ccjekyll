@@ -52,5 +52,5 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #   - vendor/gems/
 #   - vendor/ruby/
 
-kramdown:  
-  parse_block_html: true
+# kramdown:  
+#   parse_block_html: true
