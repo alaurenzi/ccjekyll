@@ -1,0 +1,15 @@
+<div class="card">
+
+    <img src="{{ include.img_src }}" alt="{{ include.img_alt }}" class="card-img">
+    <div class="card-text">
+        <div class="card-header">   
+            <div class="card-title">{{ include.title }}</div>
+            <div class="card-author">{{ include.subtitle }}</div>
+        </div>
+        <p class="card-short">
+            {{ include.excerpt }}
+        </p>
+    </div>
+    <a href="{{site.baseurl}}{{ include.url | strip }}" class="card-readmore">Continua a leggere...</a>
+
+</div>
