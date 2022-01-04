@@ -1,4 +1,4 @@
-# ccjekyll
+# ccjekyll [![Build Status](https://app.travis-ci.com/alaurenzi/ccjekyll.svg?branch=master)](https://app.travis-ci.com/alaurenzi/ccjekyll)
 Source code for Cate &amp; Penna blog
 
 ## Generating the website
