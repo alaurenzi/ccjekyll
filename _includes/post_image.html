@@ -1,5 +1,0 @@
-{% capture src %}
-{% include url_prepend.html arg_url=include.src arg_prefix=site.data.img.prefix %}
-{% endcapture %}
-
-<div class="{{include.class}}"><img src="{{ src | strip_newlines | strip }}"><div class="post-img-dida">{{include.dida}}</div></div>
