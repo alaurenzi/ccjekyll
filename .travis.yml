@@ -7,7 +7,7 @@ branches:
   - master
 
 before_script:
-  - gem install bundler jekyll
+  - gem install bundler
   - bundler install 
   - sudo apt update && sudo apt install jpegoptim
 
