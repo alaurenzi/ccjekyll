@@ -6,7 +6,8 @@ branches:
 
 before_script:
   - gem install bundler jekyll
-  - bundler install
+  - bundler install 
+  - sudo apt update && sudo apt install jpegoptim
 
 script:
   - ./scripts/resize.bash
