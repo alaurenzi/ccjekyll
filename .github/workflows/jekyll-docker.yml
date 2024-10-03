@@ -14,6 +14,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install dependencies
+        run: sudo apt-get install -y imagemagick jpegoptim
+      - name: Generate images
+        run: ./scripts/resize.bash
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build
